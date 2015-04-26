@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <center>
+        <input type="button" value="Clearscreen" id="clearButton">
+        <br>
+        <canvas id = "c" width="400" height="400" style = "border:10px solid;"></canvas>
+        </center>
+        <center>
+        <input type="button" value="Click here to change color." id="colorbutton">
+        <br>
+        <input type="button" value="Click here to change color...RANDOMLY!" id="randomColorButton">
+        </center>
+
+        <script type="text/javascript">
+
+//initialization
+        var colors = ["red","green","blue","other"];
+        var colorpointer = 0;
+        var canvas = document.getElementById("c");
+        var gl = canvas.getContext("webgl");
+        var color = prompt("what color do you want");
+        var colorslength = colors.length;
+//------------------------------------------------------------//
+
+//Function that sets the clearcolor with input argument string for dynamic change
+        function display(x)
+        {
+            if (x == "blue")
+                {
+                return(gl.clearColor(0.0,0.0,1.0,1.0));
+                }
+            if (x == "red")
+                {
+                return(gl.clearColor(1.0,0.0,0.0,1.0));
+                }
+            if (x == "green")
+                {
+                return(gl.clearColor(0.0,1.0,0.0,1.0));
+                }
+            else {return(gl.clearColor(0.5,0.1,0.3,1.0))};
+        }
+//-----------------------------------------------------------------------------//
+
+//Button creation for getting input to utilize dynamic coloring
+        document.getElementById('colorbutton').onclick = function()
+        {
+            ++colorpointer;
+            if (colorpointer > (colorslength-1))
+            {
+                colorpointer -= colorslength;
+            }
+            var newcolor=colors[colorpointer];
+            display(newcolor);
+            gl.clear(gl.COLOR_BUFFER_BIT);
+        }
+//------------------------------------------------------------------------------//
+
+//Random color button
+        document.getElementById('randomColorButton').onclick = function()
+        {
+            var x=Math.random();
+            var y=Math.random();
+            var z=Math.random();
+            gl.clearColor(x,y,z,1.0);
+            gl.clear(gl.COLOR_BUFFER_BIT);
+        }
+//------------------------------------------------------------------------------------
+
+//Clear Color Button
+        document.getElementById('clearButton').onclick = function()
+        {
+            gl.clearColor(1.0,1.0,1.0,1.0);
+            gl.clear(gl.COLOR_BUFFER_BIT);
+            colorpointer=(-1); //resetting cycle of predictable color changes
+        }
+//-------------------------------------------------------------------------------//
+
+// first loop defaults to the color input via string, next ones execute within the event capture
+        display(color);
+        gl.clear(gl.COLOR_BUFFER_BIT);
+//------------------------------------------------------------------------------//
+    </script>
+    </body>
+<a href="original.html">Click here Katrina!</a>
+<a href="jamba/index.html">Click here for hearty jumpy game!</a>
+<a href="raindrops/index.html">Click here for RAINDROPS!!!!!</a>
+</html>
+
