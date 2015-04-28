@@ -2,6 +2,8 @@
 	<title> OregonMade.com </title>
 	<body>
 		<h1><center>Welcome to Oregonmade</center></h1>
+<center><p><i>Serving the community with local products and services.</i></p></center>
+<leftjustified>Goods</leftjustified><rightjustified>Services</rightjustified>
 		<br>
 		<br>
 		<p>Services</p>
@@ -12,10 +14,9 @@
 		<!link to local vendors>
 		
 		<t>
-		<p>Location
+		<p>Location</p>
 <!roseburg obviously, expand to encompass sutherlin, myrtle creek,oakland,canyonville,cottagegrove,
 glendale,eugene,medford,glide,elkton,yoncalla>
-		</p>
 		<br>
 		<p>Hours</p>
 			<!currently from 5pm to midnight>
@@ -26,5 +27,18 @@ specialty service $75.00 for data recovery>
 		<br>
 		<p> Contact</p>
 <!Cell, Email, Request call back>
+		<p>links under construction</p>
+		<a href="accountingServices/index.html">Accounting</a>
+		<a href="art/index.html">Art</a>
+		<a href="computerRepair/index.html">PC Paramedic</a>
+		<a href="construction/index.html">Construction</a>
+		<a href="customPCSales/index.html">Computers</a>
+		<a href="deliveryServices/index.html">Deliveries</a>
+		<a href="education/index.html">Education</a>
+		<a href="foodService/index.html">Food</a>
+		<a href="furniture/index.html">Furniture</a>
+		<a href="localNews/index.html">Local News</a>
+		<a href="videoGames/index.html">Video Games</a>
+		<a href="webDesign/index.html">Web Design</a>
 	</body>
 </html>
