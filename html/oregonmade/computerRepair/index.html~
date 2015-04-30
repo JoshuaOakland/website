@@ -1,17 +1,18 @@
 <html>
-	<title>Computer Repair Services</title>
+	<title>Oregonmade Computer Rescue</title>
+	<h1><center>Computer Rescue</center></h1>
 	<body>
-		<h1><center>PC Paramedic</center></h1>
-		<br>
-		<p>Virus and Malware Removal</p>
-		<br>
-		<p>Hardware Diagnostic and Replacement</p>
-		<br>
-		<p>Tune up</p>
-		<br>
-		<p>Data Recovery</p>
-		<br>
-		<p>Consulting</p>
-		<br>
-	<body>
+		<p>Having troubles? Give us a call at xxx-xxx-xxxx</p>
+		<br />
+		<p>From hardware to software we cover it all.</p>
+		<ul>
+			<li>Operating System recovery or upgrade.
+			<li>Hardware failures.
+			<li>Virus and Malware removals.
+			<li>Diagnostics
+			<li>Performance tuning, and hardware maintenance.
+			<li>Data Recovery.
+		</ul>
+		<a href="../index.html">Home</a>
+	</body>
 </html>
