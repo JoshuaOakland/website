@@ -1,0 +1,10 @@
+make use of the elements
+<br />
+<hr />
+<sup></sup>
+<sub><sub>
+when you get home later.
+break;
+horizontal line;
+superscript;
+subscript;
